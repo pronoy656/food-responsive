@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      img {
+        width: 50%;
+        margin-bottom: 20px;
+      }
+      p {
+        width: 30%;
+        margin-left: 50px;
+      }
+      button {
+        background-color: red;
+        color: white;
+        border: 1px solid black;
+        border: none;
+        border-radius: 8px;
+        padding: 20px;
+        margin-top: 20px;
+      }
+      .burger {
+        display: flex;
+      }
+      .pizza {
+        display: flex;
+      }
+      @media screen and (max-width: 576px) {
+        .burger {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          p {
+            width: 100%;
+            margin-left: 0;
+          }
+          img {
+            width: 75%;
+            height: auto;
+          }
+        }
+        .pizza {
+          display: grid;
+          grid-template-columns: repeat(1, 1fr);
+          p {
+            width: 100%;
+            margin-left: 0;
+          }
+          img {
+            width: 75%;
+            height: auto;
+          }
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="burger">
+          <img src="images/burger.jpg" alt="" />
+          <p>
+            A burger is a patty of ground beef grilled and placed between two
+            halves of a bun. Slices of raw onion, lettuce, bacon, mayonnaise,
+            and other ingredients add flavor. Burgers are considered an American
+            food but are popular around the world. In Japan, teriyaki burgers
+            are popular. <br />
+            <button>Order Now</button>
+          </p>
+        </div>
+        <div class="pizza">
+          <img src="images/Pizza6cf.jpg" alt="" />
+          <p>
+            Pizza is a dish of Italian origin consisting of a usually round,
+            flat base of leavened wheat-based dough topped with tomatoes,
+            cheese, and often various other ingredients, which is then baked at
+            a high temperature, traditionally in a wood-fired oven. <br />
+            <button>order Now</button>
+          </p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
